@@ -1,12 +1,20 @@
 import styles from "../style/PuzzleBoard.module.css";
 import PropTypes from "prop-types";
 import Tile from "./Tile";
-
+import { useContext } from "react";
+import { GameContext } from "../context/GameContext";
 export default function PuzzleBoard({ tiles, rows, cols }) {
+  const { handleTileClick } = useContext(GameContext);
+
   return (
     <div className={styles.puzzleBoard}>
       {tiles.map((tile, index) => (
-        <Tile key={Math.random()} tile={tile} index={index} />
+        <Tile
+          onClick={() => handleTileClick(index, tile)}
+          key={Math.random()}
+          tile={tile}
+          index={index}
+        />
       ))}
     </div>
   );

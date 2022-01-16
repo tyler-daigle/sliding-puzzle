@@ -24,10 +24,13 @@ export function shuffleTiles(tiles) {
   while (len > 0) {
     // randomly select a tile
     const tileNum = Math.floor(Math.random() * len);
+
     let temp = shuffled[len - 1]; // save the last tile in the array
     shuffled[len - 1] = shuffled[tileNum]; // set random tile to the last one
+
     // move that tile to the end
     shuffled[tileNum] = temp; // move the previous last tile to the random position
+
     // shorten the length of the array
     len--;
   }
