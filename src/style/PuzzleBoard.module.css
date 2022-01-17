@@ -5,4 +5,7 @@
   grid-gap: 10px;
   width: calc(100px * 4 + 10px * 4);
   margin: 1rem auto;
+  background-color: #0d2338;
+  padding: 2rem;
+  border-radius: 10px;
 }

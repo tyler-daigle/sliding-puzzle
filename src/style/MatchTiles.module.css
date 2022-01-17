@@ -1,0 +1,31 @@
+.matchTileContainer {
+  display: flex;
+  width: calc(100px * 4 + 10px * 4);
+  margin: 2rem auto;
+  gap: 10px;
+  background-color: #0d2338;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.matchTile {
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.tileA {
+  background-color: var(--tile-a-color);
+}
+
+.tileB {
+  background-color: var(--tile-b-color);
+}
+
+.tileC {
+  background-color: var(--tile-c-color);
+}
+
+.tileD {
+  background-color: var(--tile-d-color);
+}

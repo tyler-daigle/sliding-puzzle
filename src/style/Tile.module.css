@@ -1,26 +1,42 @@
 .tile {
-  border: solid 2px black;
+  border: solid 1px #000;
+  color: white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 4px 4px 0px #000;
   cursor: pointer;
 }
 
 .tile:hover {
-  background-color: black;
+  border: solid 1px black;
   color: white;
-  box-shadow: 4px 4px 0px rgb(214, 62, 176);
+  box-shadow: 5px 5px 0px #f0654c;
+  transform: translateY(-5px);
+  /* box-shadow: 4px 4px 0px #fff; */
 }
 
 .tileEmpty {
-  background-color: white;
+  background-color: #0d2338;
   border: none;
   box-shadow: none;
 }
 
 .tileEmpty:hover {
-  background-color: white;
+  border: none;
+  background-color: #0d2338;
   box-shadow: none;
+}
+
+.tileA {
+  background-color: #f72585;
+}
+.tileB {
+  background-color: #7209b7;
+}
+.tileC {
+  background-color: #3a0ca3;
+}
+.tileD {
+  background-color: #4361ee;
 }

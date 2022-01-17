@@ -1,5 +1,13 @@
+:root {
+  --tile-a-color: #f72585;
+  --tile-b-color: #7209b7;
+  --tile-c-color: #3a0ca3;
+  --tile-d-color: #4361ee;
+}
+
 body {
   font-family: "Dongle", sans-serif;
   font-size: 16px;
   margin: 0;
+  background-color: black;
 }
